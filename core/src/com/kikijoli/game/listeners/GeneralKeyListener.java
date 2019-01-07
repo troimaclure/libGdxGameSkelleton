@@ -24,7 +24,6 @@ public class GeneralKeyListener extends InputAdapter {
     public static AbstractAction onTouchAction;
     private boolean dragged;
     private int buttonDown;
-    private float oldX = 0;
 
     @Override
     public boolean keyDown(int keycode) {
@@ -95,7 +94,7 @@ public class GeneralKeyListener extends InputAdapter {
 
     @Override
     public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-        oldX = 0;
+
         if (button == Input.Buttons.RIGHT) {
             onTouchAction = null;
             EntiteManager.rightClick();

@@ -2,7 +2,7 @@ package com.kikijoli.ville.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.kikijoli.game.GameSkelleton;
+import com.kikijoli.game.GameSkeleton;
 
 public class DesktopLauncher {
 
@@ -16,6 +16,6 @@ public class DesktopLauncher {
         config.vSyncEnabled = true;
         config.allowSoftwareMode = true;
 
-        new LwjglApplication(new GameSkelleton(), config);
+        new LwjglApplication(new GameSkeleton(), config);
     }
 }
